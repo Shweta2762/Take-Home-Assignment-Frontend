@@ -1,10 +1,8 @@
 export const Config = {
-    apiEndpoint:process.env.REACT_APP_API_ENDPOINTS || "",
-    port: process.env.REACT_APP_PORT_NO || "",
-    http: process.env.REACT_APP_HTTP_VALUE || "",
+  baseUrl: process.env.REACT_APP_BASE_URL || "",
 };
 
-export const BASE_URL = `${Config.http}${Config.apiEndpoint}${Config.port}`;
+export const BASE_URL = Config.baseUrl;
 
 export const API_ENDPOINTS = {
     submitReport: "/api/report",
